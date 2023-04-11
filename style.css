@@ -1,0 +1,110 @@
+body{
+  background: orange;
+}
+#myInput{
+  border:3px solid coral;
+  margin:0;
+  border-radius:0;
+  padding: 10px;
+  width:60%;
+  font-size: 16px;
+}
+.addButton{
+  padding:10px;
+  width:25%;
+  background: orange;
+  color:#fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius:0;
+  transition: 0.3s;
+  cursor:pointer;
+}
+.addButton:hover{
+  background: coral;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+ul li{
+  position:relative;
+  padding:12px 8px 12px 40px;
+  background: orangered;
+  color:#fff;
+  margin-top: 5px;
+  border-radius:5px;
+  font-size: 18px;
+  transition: 0.2s;
+  cursor:pointer;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd){
+  background: coral;
+}
+ul li:hover{
+  background: lightcoral;
+}
+ul li.checked{
+  background: darkcoral;
+  color:#fff;
+  text-decoration: line-through;
+}
+ul li.checked::after{
+  content:'';
+  position: absolute;
+  border-color: #fff;
+  border-style:solid;
+  border-width:0px 2px 2px 0px;
+  top:10px;
+  left:16px;
+  transform:rotate(45deg);
+  height:15px;
+  width:7px;
+}
+.close{
+  position:absolute;
+  top:0;
+  right:0;
+  border-left: 1px solid #fff;
+  border-top-left-radius: 3px;
+  border-radius:5px;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover{
+  background: orangered;
+  color:fff;
+}
+.head{
+  position:sticky;
+  background-color: orangered;
+  color:#fff;
+  padding:30px 40px;
+  text-align: center;
+  border:1px solid #fff;
+}
+.head:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+.btnsCont{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+.btns{
+  position: relative;
+  width:130px;
+  height:30px;
+  font-size:20px;
+  background: orangered;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius:5px;
+
+  margin-top: 30px;
+}
